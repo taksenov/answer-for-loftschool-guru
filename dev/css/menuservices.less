@@ -1,0 +1,73 @@
+/* -------= примесь для элемента сервиного меню =------- */
+.original-service-link (@img1: none, @img2: none) {
+    text-align: center;
+    .inlineblock;
+    padding: 0;
+    border: 0 none;
+    text-decoration: none;
+    .transition(0.2s);
+    line-height: @slider-height;
+    color: @main-dark-color;
+    font-size: 18px;
+    .ubuntu-m;
+    text-transform: uppercase;
+    display: block;
+    height: @slider-height;
+    width: 100%;
+
+    span {
+        text-align: left;
+        padding-top: 22px;
+        padding-left: 25px;
+        width: 180px;
+        white-space: normal;
+        .inlineblock;
+        line-height: 20px;
+    }
+
+    &:before {
+        margin-left: -20px;
+
+        content: "";
+        width: 42px;
+        height: @slider-height;
+        .inlineblock;
+        background: @img1 center center no-repeat;
+    }
+
+    &:hover {
+        opacity: 0.9;
+        background-color: @menu-active-color;
+        text-decoration: none;
+        color: @main-text-color;
+
+        &:before {
+            margin-left: -20px;
+
+            content: "";
+            width: 42px;
+            height: @slider-height;
+            .inlineblock;
+            background: @img2 center center no-repeat;
+        }
+
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+/* -------= imports =------- */
+@import "main";
+//@import "serviceinfo";
+@import "button";
+@import "mixins";
+@import "fonts";
+/* -------= imports =------- */
+
+/* -------= variables =------- */
+//@main-image-height: 397px;
+@main-image-height: 100vh;
+@main-image-min-height: 240px;
+@main-image-max-height: 397px;
+@dark-divider-height: 215px;
+@dark-divider-min-height: 215px;
+@dark-divider-max-height: 800px;
+@dark-divider-color: #333333;
+@order-info-height: 583px;
+/* -------= variables =------- */
+
+/* -------= dark-divider =------- */
+.dark-divider {
+
+    background: @dark-divider-color no-repeat center center /*fixed*/;
+    //-webkit-background-size: cover;
+    //-moz-background-size: cover;
+    //-o-background-size: cover;
+    //background-size: cover;
+    width: 100%;
+    height:     @dark-divider-height;
+    min-height: @dark-divider-min-height;
+    max-height: @dark-divider-max-height;
+    z-index: -10;
+}
+.dark-divider__pattern {
+//	background:url('../../static/img/darkdivider/pattern2.png');
+	background:url('../../static/img/darkdivider/pattern_vrezka.jpg');
+	background-repeat: repeat;
+	background-position: center center;
+    width: 100%;
+    height:     @dark-divider-height;
+    min-height: @dark-divider-min-height;
+    max-height: @dark-divider-max-height;
+    z-index: -9;
+}
+.backcall-button {
+    /*
+    @width: 68px,              = ширина
+    @height: 28px,             = высота
+    @img: none,                = картинка иконки
+    @bradius: 3px,             = радиус уголков
+    @bg-color: #17709a,        = цвет фона
+    @hover-bg-color: #17709a,  = цвет фона при ховере
+    @font-color: #ffffff       = цвет шрифта
+     */
+    text-transform: uppercase;
+    .original-button (
+        247px,
+        42px,
+        none,
+        none,
+        #cb2026,
+        #ad1c22,
+        #ffffff
+    );
+
+}
+.dark-divider__text {
+    color: @main-text-color;
+    .ubuntu;
+    font-size: 18px;
+}
+.dark-divider__text_phone {
+    font-weight: 600;
+}
+.dark-divider__text-align_mod {
+    text-align: center;
+}
+.dark-divider__mainrow {
+    margin-top: 5%;
+    margin-bottom: 25px;
+}
+.dark-divider__buttonrow {
+
+}
+
+/* -------= dark-divider =------- */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

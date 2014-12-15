@@ -1,0 +1,134 @@
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html,
+button,
+input,
+select,
+textarea {
+    color: #222;
+}
+
+html {
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+
+audio,
+canvas,
+img,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browse Happy prompt
+   ========================================================================== */
+
+.browsehappy {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+/* author = taksenov@gmail.com */
+/* MainSettings */
+@import "mixins";
+@import "fonts";
+@import "button";
+@import "rating";
+@import "menuservices";
+@import "serviceinfo";
+@import "main-epd";
+
+
+/* -------= размеры =------- */
+@container-width : 1140px;
+@logo-height : 50px;
+//@footer-height   : 100%;
+//@footer-height   : 160px;
+//@body-font       : "MyriadPro-Regular";
+/* -------= размеры =------- */
+
+/* -------= цвета используемые на странице =------- */
+@black-color : #1a1a1a;
+@gray-color : #7f7f7f;
+@red-color : #7b0404;
+@lemon-color : #c6b108;
+@lightyellow-color : #fff5a3;
+@footer-color : #282828;
+@footer-text-color : #ffffff;
+@main-dark-color : #282828;
+@main-text-color : #ffffff;
+@menu-active-color : #df1f26;
+@menu-services-color : #dfdfdf;
+@footer-mainheader-color : #767676;
+/* -------= цвета используемые на странице =------- */
+
